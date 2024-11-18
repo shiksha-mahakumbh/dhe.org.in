@@ -12,7 +12,7 @@ const Marquees: React.FC = () => {
   const marquees: Item[] = [
     { imageUrl: '/new.gif', text: "3rd Edition of RASE Conferences concluded successfully at NIT Srinagar on June 29-30, 2024", link: '' },
     { imageUrl: '/new.gif', text: "Next RASE Conferences of J&K will be held in IIT Jammu. Stay tuned for more updates.", link: '' },
-    { imageUrl: '/new.gif', text: "The date of शिक्षा महाकुंभ 2.0 is finalised and now it’s going to happen on December 14-15, 2024. Register to participate at shikshamahakumbh.com & rase.co.in", link: '' },
+    { imageUrl: '/new.gif', text: "The date of शिक्षा महाकुंभ 2.0 is finalised and now it’s going to happen on December 16-17, 2024. Register to participate at shikshamahakumbh.com & rase.co.in", link: '' },
     { imageUrl: '/new.gif', text: "All registrations and papers submitted will be valid in the rescheduled programme. Further the process of registrations and invitations will continue as earlier. Inconvenience caused due to postponement of the programme is deeply regretted. Stay tuned with us at our website and social media handles for more updates.", link: '' },
   ];
 

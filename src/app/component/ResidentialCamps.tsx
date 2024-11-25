@@ -8,6 +8,11 @@ const ResidentialCamps: React.FC = () => {
       date: "September 07-08, 2024",
       venue: "IIT Ropar",
       link: "/residentialcamps/DHE_प्रथम _आवासीय_आवास_वर्ग.pdf",
+    }, {
+      title: "DHE द्वितीय आवासीय आवास वर्ग",
+      date: "November 23-24, 2024",
+      venue: "Gita Niketan, Kurukshetra",
+      link: "/residentialcamps/second.jpg",
     },
     
   ];

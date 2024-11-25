@@ -32,14 +32,13 @@ const UpcomingEvent: React.FC = () => {
             Indian Education System for Global Developement
             </td>
             <td className="w-full sm:w-1/5 px-1 py-2 border text-left text-black">
-            December 14&#45;15, 2024
+            December 16&#45;17, 2024
             </td>
             <td className="w-full sm:w-1/5 px-1 py-2 border text-left text-black">
-            Gita Niketan Awasiya
-Vidyalaya, Kurukshetra 
+            Kurukshetra University
             </td>
             <td className="w-full sm:w-1/5 px-1 py-2 border text-left text-black">
-              <Link href="/sm24.rase.co.in" className="text-primary font-bold hover:text-blue-950">Click here</Link> 
+              <Link href="https://www.shikshamahakumbh.com/" className="text-primary font-bold hover:text-blue-950">Click here</Link> 
             </td>
           </tr>
           <tr>

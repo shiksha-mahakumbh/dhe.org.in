@@ -70,7 +70,7 @@ const Accounts: React.FC = () => {
       bank: "State Bank of India",
       branch: "Chandigarh Main Branch",
       ifsc: "SBIN0000628",
-      upiid: "shikshakhumb@sbi",
+      upiid: "shikshamahakumbhkhumb@sbi",
       image: sm,
       previewLink: "/accounts/sm.pdf",
       downloadLink: "/accounts/sm.pdf",

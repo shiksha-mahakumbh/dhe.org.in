@@ -62,7 +62,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === 'production' && (
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4330032354977759"
@@ -72,45 +72,43 @@ export default function RootLayout({
         <script async src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
         <script
           async
-          src="https://mediafiles.botpress.cloud/fa60123e-045a-48d8-862e-81258c3ccc9a/webchat/config.js"
+          src="https://mediafiles.botpress.cloud/e2ba40e6-3b23-4f8d-a2f7-e2fbd8700925/webchat/config.js"
           defer
         ></script>
       </head>
-
       <meta httpEquiv="refresh" content="1000" />
       <meta charSet="utf-8" />
-      <link rel="icon" href="/dhe.png" sizes="any" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Department of Holistic Education &minus; Vidya Bharti</title>
-      <meta
-        name="keywords"
-        content="Department of Holistic Education,holistic department, DHE ,Vidya Bharti, National Conference on Recent Advances in School Education, Rase"
-      />
-      <meta name="description" content="Welcome to DHE" />
+      <title>Welcome to शिक्षा महाकुंभ and शिक्षा कुंभ। An initiative of DHE in collaboration with INIs to hold शिक्षा महाकुंभ annually and शिक्षा कुंभ half yearly.</title>
+      <meta name="keywords" content="RASE2023, RASE 2023, National Conference on Recent Advances in School Education, rase 2023, r a s e, mahakumbh 2024, mahakumbh 2023, महाकुंभ 2023, महाकुंभ 2024" />
+      <meta name="description" content="Joint Conference" />
       <meta httpEquiv="cache-control" content="no-cache" />
       <meta httpEquiv="Pragma" content="no-cache" />
       <meta httpEquiv="Expires" content="-1" />
-
-      <body className={inter.className} style={{ background: "#ffffff" }}>
-        <CompanyInfo />
-        <Header />
+      <meta name="google-adsense-account" content="ca-pub-4330032354977759" />
+      <body className={inter.className}>
+        {/* Main Content */}
         {children}
-        <BottomView />
 
+        {/* Modal Component */}
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div className="text-white p-2 rounded-lg flex justify-center text-center text-base md:text-2xl font-semibold bg-primary">The date of शिक्षा महाकुंभ 2.0 is finalised and now it’s going to happen on December 16-17, 2024. Register to participate at shikshamahakumbh.com & rase.co.in
+          <div className="text-white p-4 rounded-lg flex flex-col items-center justify-center text-center text-base md:text-xl font-semibold bg-primary">
+            <p>
+                To watch the live broadcast of <strong>शिक्षा महाकुंभ 2.0</strong>, visit the <strong>अधिकृत यूट्यूब चैनल</strong>:
+            </p>
+            <p>
+             <a href="https://youtube.com/@shikshamahakumbh?si=Q5UUoP5RiG2Dw1y1" className="text-white">
+                youtube.com/@shikshamahakumbh
+             </a>
+            </p>
           </div>
         </Modal>
-        <NextTopLoader
-          color="#F44336"
-          initialPosition={0.08}
-          crawlSpeed={200}
-          height={3}
-          crawl={false}
-          showSpinner={false}
-          shadow="0 0 10px #F44336,0 0 5px #F44336"
-        />
-        <Toaster />
+
+
+
+
+        {/* Toaster for notifications */}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

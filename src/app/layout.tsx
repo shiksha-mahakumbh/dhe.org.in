@@ -1,16 +1,11 @@
 "use client";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import NextTopLoader from "nextjs-toploader";
-import Floating from "./component/Floating";
-import CompanyInfo from "./component/CompanyInfo";
-import Header from "./component/Header";
-import BottomView from "./component/BottomView";
-const inter = Inter({ subsets: ["latin"] });
-import toast, { Toaster } from "react-hot-toast";
-import Modal from "./component/Modal";
+import './globals.css';
+import { Inter } from 'next/font/google';
+import { Toaster } from 'react-hot-toast'; // Toaster for notifications
 import { useState, useEffect } from "react";
+import Modal from './component/Modal'; // Import the modal component
+
+const inter = Inter({ subsets: ['latin'] });
 
 interface CustomWindow extends Window {
   localStream?: MediaStream;
@@ -24,8 +19,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(true); // Modal state
 
+  // Open and close handlers for modal
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -34,6 +30,7 @@ export default function RootLayout({
     setIsModalOpen(false);
   };
 
+  // Handle microphone permissions
   const handlePermission = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -55,7 +52,7 @@ export default function RootLayout({
   };
 
   useEffect(() => {
-    // Uncomment the line below to automatically request permissions on page load (not recommended).
+    // You can uncomment this to request permissions automatically
     // handlePermission();
   }, []);
 
@@ -94,11 +91,11 @@ export default function RootLayout({
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div className="text-white p-4 rounded-lg flex flex-col items-center justify-center text-center text-base md:text-xl font-semibold bg-primary">
             <p>
-                To watch the live broadcast of <strong>शिक्षा महाकुंभ 2.0</strong>, visit the <strong>अधिकृत यूट्यूब चैनल</strong>:
+          <strong>शिक्षा महाकुंभ 2.0</strong>was successfully concluded at Kurukshetra University from December 16-17, 2024. <strong> To download photographs click here</strong>:
             </p>
             <p>
-             <a href="https://youtube.com/@shikshamahakumbh?si=Q5UUoP5RiG2Dw1y1" className="text-white">
-                youtube.com/@shikshamahakumbh
+             <a href="https://drive.google.com/drive/folders/1XnauGu1-dQ2KCpTzvIMHhUwlBF-6GDEN" className="text-white">
+                Link
              </a>
             </p>
           </div>

@@ -1,16 +1,11 @@
 "use client";
-import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import NextTopLoader from "nextjs-toploader";
-import Floating from "./component/Floating";
-import CompanyInfo from "./component/CompanyInfo";
-import Header from "./component/Header";
-import BottomView from "./component/BottomView";
-const inter = Inter({ subsets: ["latin"] });
-import toast, { Toaster } from "react-hot-toast";
-import Modal from "./component/Modal";
+import './globals.css';
+import { Inter } from 'next/font/google';
+import { Toaster } from 'react-hot-toast'; // Toaster for notifications
 import { useState, useEffect } from "react";
+import Modal from './component/Modal'; // Import the modal component
+
+const inter = Inter({ subsets: ['latin'] });
 
 interface CustomWindow extends Window {
   localStream?: MediaStream;
@@ -24,8 +19,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(true); // Modal state
 
+  // Open and close handlers for modal
   const openModal = () => {
     setIsModalOpen(true);
   };
@@ -34,6 +30,7 @@ export default function RootLayout({
     setIsModalOpen(false);
   };
 
+  // Handle microphone permissions
   const handlePermission = async () => {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
@@ -55,14 +52,14 @@ export default function RootLayout({
   };
 
   useEffect(() => {
-    // Uncomment the line below to automatically request permissions on page load (not recommended).
+    // You can uncomment this to request permissions automatically
     // handlePermission();
   }, []);
 
   return (
     <html lang="en">
       <head>
-        {process.env.NODE_ENV === "production" && (
+        {process.env.NODE_ENV === 'production' && (
           <script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4330032354977759"
@@ -72,45 +69,35 @@ export default function RootLayout({
         <script async src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
         <script
           async
-          src="https://mediafiles.botpress.cloud/fa60123e-045a-48d8-862e-81258c3ccc9a/webchat/config.js"
+          src="https://mediafiles.botpress.cloud/e2ba40e6-3b23-4f8d-a2f7-e2fbd8700925/webchat/config.js"
           defer
         ></script>
       </head>
-
       <meta httpEquiv="refresh" content="1000" />
       <meta charSet="utf-8" />
-      <link rel="icon" href="/dhe.png" sizes="any" />
       <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-      <title>Department of Holistic Education &minus; Vidya Bharti</title>
-      <meta
-        name="keywords"
-        content="Department of Holistic Education,holistic department, DHE ,Vidya Bharti, National Conference on Recent Advances in School Education, Rase"
-      />
-      <meta name="description" content="Welcome to DHE" />
+      <title>Welcome to शिक्षा महाकुंभ and शिक्षा कुंभ। An initiative of DHE in collaboration with INIs to hold शिक्षा महाकुंभ annually and शिक्षा कुंभ half yearly.</title>
+      <meta name="keywords" content="RASE2023, RASE 2023, National Conference on Recent Advances in School Education, rase 2023, r a s e, mahakumbh 2024, mahakumbh 2023, महाकुंभ 2023, महाकुंभ 2024" />
+      <meta name="description" content="Joint Conference" />
       <meta httpEquiv="cache-control" content="no-cache" />
       <meta httpEquiv="Pragma" content="no-cache" />
       <meta httpEquiv="Expires" content="-1" />
-
-      <body className={inter.className} style={{ background: "#ffffff" }}>
-        <CompanyInfo />
-        <Header />
+      <meta name="google-adsense-account" content="ca-pub-4330032354977759" />
+      <body className={inter.className}>
+        {/* Main Content */}
         {children}
-        <BottomView />
 
+        {/* Modal Component */}
         <Modal isOpen={isModalOpen} onClose={closeModal}>
           <div className="text-white p-2 rounded-lg flex justify-center text-center text-base md:text-2xl font-semibold bg-primary">शिक्षा महाकुंभ 2.0 was successfully concluded at Kurukshetra University from December 16-17, 2024. To download photographs click here:
           </div>
         </Modal>
-        <NextTopLoader
-          color="#F44336"
-          initialPosition={0.08}
-          crawlSpeed={200}
-          height={3}
-          crawl={false}
-          showSpinner={false}
-          shadow="0 0 10px #F44336,0 0 5px #F44336"
-        />
-        <Toaster />
+
+
+
+
+        {/* Toaster for notifications */}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

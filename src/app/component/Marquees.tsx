@@ -13,7 +13,7 @@ const Marquees: React.FC = () => {
     { imageUrl: '/new.gif', text: "3rd Edition of RASE Conferences concluded successfully at NIT Srinagar on June 29-30, 2024", link: '' },
     { imageUrl: '/new.gif', text: "Next RASE Conferences of J&K will be held in IIT Jammu. Stay tuned for more updates.", link: '' },
     { imageUrl: '/new.gif', text: " शिक्षा महाकुंभ 2.0 was successfully concluded at Kurukshetra University from December 16-17, 2024.To download photographs click here", link: '' },
-    { imageUrl: '/new.gif', text: "All registrations and papers submitted will be valid in the rescheduled programme. Further the process of registrations and invitations will continue as earlier. Inconvenience caused due to postponement of the programme is deeply regretted. Stay tuned with us at our website and social media handles for more updates.", link: '' },
+    { imageUrl: '/new.gif', text: "", link: '' },
   ];
 
   return (

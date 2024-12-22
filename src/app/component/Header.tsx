@@ -22,11 +22,9 @@ const menus: Menu[] = [
       { path: "/people", title: "Cell Co-ordinators" },
     ],
   },
-  { path: "/", title: "Publication",
-    subMenu: [
-      { path: "https://pub.dhe.org.in", title: "Jounals" },
-      { path: "/books", title: "Books" },
-    ],
+  { path: "https://pub.dhe.org.in", title: "Publication",
+   
+     
    },
   {
     path: "/",

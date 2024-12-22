@@ -24,7 +24,7 @@ const menus: Menu[] = [
   },
   { path: "/", title: "Publication",
     subMenu: [
-      { path: "/journals", title: "Jounals" },
+      { path: "/pub.dhe.org.in", title: "Jounals" },
       { path: "/books", title: "Books" },
     ],
    },

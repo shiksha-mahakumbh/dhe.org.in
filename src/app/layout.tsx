@@ -98,8 +98,17 @@ export default function RootLayout({
         <BottomView />
 
         <Modal isOpen={isModalOpen} onClose={closeModal}>
-          <div className="text-white p-2 rounded-lg flex justify-center text-center text-base md:text-2xl font-semibold bg-primary">शिक्षा महाकुंभ 2.0 was successfully concluded at Kurukshetra University from December 16-17, 2024. To download photographs click here:
+        <div className="text-white p-4 rounded-lg flex flex-col items-center justify-center text-center text-base md:text-xl font-semibold bg-primary">
+            <p>
+          <strong>शिक्षा महाकुंभ 2.0</strong>was successfully concluded at Kurukshetra University from December 16-17, 2024. <strong> To download photographs click here</strong>:
+            </p>
+            <p>
+             <a href="https://drive.google.com/drive/folders/1XnauGu1-dQ2KCpTzvIMHhUwlBF-6GDEN" className="text-white">
+                Link
+             </a>
+            </p>
           </div>
+
         </Modal>
         <NextTopLoader
           color="#F44336"

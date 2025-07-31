@@ -97,7 +97,7 @@ export default function RootLayout({
         {children}
         <BottomView />
 
-        <Modal isOpen={isModalOpen} onClose={closeModal}>
+{/*         <Modal isOpen={isModalOpen} onClose={closeModal}>
         <div className="text-white p-4 rounded-lg flex flex-col items-center justify-center text-center text-base md:text-xl font-semibold bg-primary">
             <p>
           <strong>शिक्षा महाकुंभ 2.0</strong>was successfully concluded at Kurukshetra University from December 16-17, 2024. <strong> To download photographs click here</strong>:
@@ -109,8 +109,8 @@ export default function RootLayout({
             </p>
           </div>
 
-        </Modal>
-        <NextTopLoader
+        </Modal> */}
+{/*         <NextTopLoader
           color="#F44336"
           initialPosition={0.08}
           crawlSpeed={200}
@@ -118,7 +118,7 @@ export default function RootLayout({
           crawl={false}
           showSpinner={false}
           shadow="0 0 10px #F44336,0 0 5px #F44336"
-        />
+        /> */}
         <Toaster />
       </body>
     </html>

@@ -8,151 +8,55 @@ const DepartmentInfo: React.FC = () => {
       </h1>
 
       <p className="text-justify text-black">
-        The foundation of the Department of Holistic Education &#40;DHE&#41; is
-        rooted in the ideology that education should extend beyond academic
-        institutions. Vidya Bharti, the largest educational NGO globally,
-        established a dedicated think tank Department comprising professionals
-        from diverse fields such as academia, bureaucracy, higher and school
-        education, society, scientists, and other experts like advocates and
-        chartered accountants. DHE was conceptualized in 2021 by visionary ISRO
-        scientist&nbsp;
-        <a
-          href="http://www.drthakurskr.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Dr. Thakur SKR
-        </a>
-        under the guidance of educationist and social reformer Mr. Vijay Kumar
-        Nadda, Organising Secretary, Vidya Bharti &#45; North Zone as a pilot
-        project under Vidya Bharti Punjab. Recognizing its remarkable growth and
-        contributions to education, it was elevated to an independent
-        organization under the auspices of Vidya Bharti Institute of Training
-        and Research Trust.
+        To realize the vision of Bharat as a global superpower, we must build an education system rooted in Bharatiya values, powered by skill development, and committed to the holistic development of every learner. Education must transcend academic scores—it should engage the heart, mind, and hands, nurturing responsible citizens, innovative thinkers, and ethical leaders of tomorrow.
       </p>
       <br />
-
       <p className="text-justify text-black">
-        Currently, DHE operates under the trust&apos;s umbrella. With 25
-        dedicated cells led by coordinators, DHE spearheads various initiatives
-        aimed at transforming the education system. These include groundbreaking
-        projects such as E&#45;cycle,
-        <a
-          href="https://punjabsuper100.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Punjab Super 100
-        </a>
-        , &nbsp;
-        <a
-          href="https://www.tredul.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Tredul
-        </a>
-        , &nbsp;
-        <a
-          href="https://www.sarvatr.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Sarvatr
-        </a>
-        , &nbsp;
-        <a
-          href="https://www.alltemples.org.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Holistic Harbour
-        </a>
-        , &nbsp;
-        <a
-          href="https://poojawala.in"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          PoojaWala
-        </a>
-        , &nbsp;
-        <a
-          href="https://www.tudu.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          TuDu
-        </a>
-        , &nbsp;
-        <a
-          href="https://www.swadeshibazaar.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Swadeshi Bazaar
-        </a>
-        ,&nbsp;
-        <a
-          href="https://www.jobs360degree.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Jobs360
-          <sup>&deg;</sup>
-        </a>
-        . DHE has also revived the glorious saga of having dedicated
-        Kumbh/Mahkumbh for each major issue of society prevailing in ancient
-        Bharat by creating annual large scale events in the form of&nbsp;
-        <a
-          href="https://www.sm24.rase.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Shiksha Mahakumbh
-        </a>
-        &nbsp;and&nbsp;
-        <a
-          href="https://www.sm24.rase.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-        Shiksha Kumbh
-        </a>
-        , attracting dignitaries and stakeholders from diverse fields.
-        Additionally, DHE laid foundation of a quarterly journals i.e. &quot;
-        <a
-          href="https://vie.rase.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Viksit India
-        </a>
-        &quot; &amp; &quot;
-        <a
-          href="https://vbe.rase.co.in/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-bold text-primary hover:underline"
-        >
-          Viksit Bharat
-        </a>
-        &quot; covering a wide range of educational topics. The Department
-        comprises 400 plus professionals from diverse backgrounds who are
-        volunteering their service to shape the nation through education apart
-        from 4 full&#45;time employees and 20 graduate engineer trainees.
+        Inspired by the transformative vision of Vidya Bharti, the Department of Holistic Education (DHE) was founded to serve as a driving force for educational reform and thought leadership in India. DHE functions as the intellectual and operational nerve center for:
+      </p>
+      <br />
+      <ul className="list-disc pl-6 text-black">
+        <li>Advancing educational discourse aligned with NEP 2020</li>
+        <li>Organizing national initiatives like the Shiksha Mahakumbh Abhiyan</li>
+        <li>Designing digital platforms and IT tools for efficient school management</li>
+        <li>Enabling cross-disciplinary dialogue and leadership development</li>
+      </ul>
+      <br />
+      <p className="text-justify text-black">
+        Founded in 2021 under Vidya Bharti Punjab, and later scaled nationally under the Vidya Bharti Institute of Training & Research (VBITR) Trust in 2023, DHE has quickly emerged as a respected and action-oriented platform. It has brought together a powerful ecosystem of educators, scientists, doctors, engineers, legal experts, social reformers, and more—working collectively to transform India’s educational landscape.
+      </p>
+      <br />
+      <p className="text-justify text-black">
+        At the helm of this initiative is Dr. Thakur S.K.R., a senior scientist at ISRO and a pioneer in educational experimentation. With a deep commitment to value-based, context-sensitive, and innovation-driven learning, Dr. Thakur envisions an education system that instills character, competence, and creativity in the next generation, while staying grounded in Indian civilizational ethos.
+      </p>
+      <br />
+      <p className="text-justify text-black">
+        Through the Shiksha Mahakumbh Abhiyan, DHE has created a dynamic, inclusive platform that brings together stakeholders from all walks of life to discuss, innovate, and act on pressing educational challenges. It is not merely a series of events—but a national movement for educational transformation.
+      </p>
+      <br />
+      <p className="text-justify text-black">
+        DHE is also leading the development of impact-focused platforms to bring innovation into daily practice:
+      </p>
+      <br />
+      <ul className="list-disc pl-6 text-black">
+        <li>Tredul – Transforming tourism for modern classrooms</li>
+        <li>Sarvatra – A unified school resource and data management system</li>
+        <li>Swadeshi Bazaar – Promoting local innovation and entrepreneurship</li>
+        <li>Jobs 360° – Career readiness and employment ecosystem for school system</li>
+        <li>TuDu – Event management platform</li>
+      </ul>
+      <br />
+      <p className="text-justify text-black">
+        To ensure that the ideas and strategies emerging from these initiatives reach both society and policymakers, DHE publishes two quarterly journals:
+      </p>
+      <br />
+      <ul className="list-disc pl-6 text-black">
+        <li>Viksit Bharat</li>
+        <li>Viksit India</li>
+      </ul>
+      <br />
+      <p className="text-justify text-black">
+        These publications curate cutting-edge ideas, success stories, and policy recommendations, reinforcing India’s journey towards becoming a Vishwa Guru through education.
       </p>
     </div>
   );
